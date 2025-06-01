@@ -25,9 +25,7 @@ export default defineConfig({
         headers: {
           origin: 'http://172.18.14.130:7116',
           referer: 'http://172.18.14.130:7116'
-          // cookie: 'token.key_chat=1d4fc1f1-144d-4d1b-ae9f-b8bdeb6df6aa'
         }
-        // rewrite: (path) => path.replace(/^\/plus/chat_api, '/plus/chat')
       }
     },
     host: '0.0.0.0'

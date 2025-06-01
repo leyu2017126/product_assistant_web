@@ -105,7 +105,7 @@ const submitAnswer = async () => {
   }
 }
 
-onMounted(() => {
+onMounted(async () => {
   await init()
   await start()
 })
