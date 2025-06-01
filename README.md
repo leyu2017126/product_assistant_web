@@ -1,4 +1,4 @@
-# vue_demo_22
+# Product Assistant 智能产品助手
 
 This template should help get you started developing with Vue 3 in Vite.
 
