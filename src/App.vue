@@ -1,6 +1,6 @@
 <template>
   <div>
-    <input v-model="userAnswer" placeholder="输入答案" />
+    <input v-model="userAnswer" placeholder="输入问题" />
     <button @click="submitAnswer">提交</button>
     <div>
       <h3>流式响应：</h3>
@@ -32,7 +32,7 @@ const init = async () => {
 
     const { code, msg } = await response.json()
     if (code === 200) {
-      streamResponse.value = msg // 修正变量名
+      streamResponse.value = msg
     } else {
       console.error('初始化失败:', msg)
     }
@@ -106,8 +106,8 @@ const submitAnswer = async () => {
 }
 
 onMounted(() => {
-  init()
-  start()
+  await init()
+  await start()
 })
 
 onBeforeUnmount(() => {
